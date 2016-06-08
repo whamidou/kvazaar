@@ -115,5 +115,5 @@ void DecryptC(Crypto_Handle hdl, const unsigned char *in_stream, int size_bits, 
 }
 
 void DeleteCryptoC(Crypto_Handle hdl) {
-    DeleteCryptoC(hdl);
+	  DeleteCrypto((AESDecoder *)hdl);
 }
